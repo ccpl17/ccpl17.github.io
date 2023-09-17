@@ -1,0 +1,26 @@
+.avatar-container {
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+
+  @media (min-width: 992px) {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+.icon-kanahei {
+  /* Typography */
+  color: #575757;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.16px;
+}

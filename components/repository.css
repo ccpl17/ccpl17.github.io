@@ -1,0 +1,58 @@
+.repository {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  -webkit-backdrop-filter: blur(0.8rem);
+  backdrop-filter: blur(0.8rem);
+
+  transition: 1s cubic-bezier(0, 1, 0, 1);
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  height: 117px;
+  padding: 1rem;
+  justify-content: flex-end;
+  flex-shrink: 0;
+
+  /* Style */
+  border-radius: 8px;
+  border: 2px solid #dfe3e7;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.6);
+
+  /* Typography */
+  color: #575757;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.38px;
+
+  @media (min-width: 992px) {
+    /* Layout */
+    width: 446px;
+    height: 171px;
+    padding: 1.25rem;
+
+    /* Typography */
+    font-size: 24px;
+  }
+}
+
+.repository:hover {
+  scale: 1.005;
+}
+
+.repository:active {
+  scale: 0.995;
+
+  /* Style */
+  background: rgba(238, 238, 238, 0.5);
+}
